@@ -153,6 +153,11 @@ nav{
     text-decoration: none;
 }
 
+.menuItem a{
+    color: lightgray;
+    text-decoration: none;
+}
+
 ul .menuItem:hover{
     background-color: gray;
 }

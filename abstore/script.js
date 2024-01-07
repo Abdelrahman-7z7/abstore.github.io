@@ -258,6 +258,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const closeContactPopOut = document.querySelector(".close-contact-icon");
 
     closeContactPopOut.addEventListener("click", function(){
+        contactForm.style.display = "none";
         contactForm.classList.remove("show");
         contactForm.classList.add("hide");
         overlay.style.display = 'none'; // Hide the overlay when contact form is closed
