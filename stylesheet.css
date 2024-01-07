@@ -1,0 +1,1108 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body.blur{
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+nav{
+    background-color: #111;
+    color: white;
+    padding: 20px 50px;
+    position: fixed;
+    width: 95%;
+    z-index: 100;
+}
+
+
+
+/*navTop styling items*/
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navTitle{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color: grey;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.searchInput{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    
+}
+
+.searchInput::placeholder{
+    color: lightgrey;
+}
+
+.navItem{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.limitedOffer{
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.cartIconStyle{
+    display: flex;
+    position: relative;
+}
+
+.cartIconStyle:hover{
+    scale: 1.1;
+}
+
+.cartIcon{
+    /* background-color: white; */
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+.numberOfItem{
+    display: none;
+    color: white;
+    position: absolute;
+    padding: 5px;
+    font-size: 10px;
+    background-color: red;
+    border-radius: 70px;
+    top: -12px;
+    right: -10px;
+}
+
+
+
+
+/*navBottom styling items */
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgrey;
+    font-weight: 400;
+}
+
+.menuItem:hover{
+    color: white; /* Change the background color on hover */
+    cursor: pointer;
+}
+
+
+/*navTopMobile*/
+.navTopMobile{
+    list-style: none;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 100;
+    background-color: #0000009a;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+.navTopMobile li{
+    height: 20px;
+    width: 100%;
+    padding: 20px;
+    text-decoration: none;
+}
+
+ul .menuItem:hover{
+    background-color: gray;
+}
+
+ul .menuitemLi{
+    width: 100%;
+}
+
+.cartDesc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartDesc .cartIcon{
+    margin-right: 50px;
+}
+
+.crossIcon:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.menuIcon{
+    display: none;
+    margin-right: 50px;
+}
+
+.menuIcon:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.cartIconStyle2{
+    display: flex;
+    position: relative;
+    margin-right: 50px;
+}
+
+.cartIconStyle2:hover{
+    scale: 1.1;
+}
+
+.cartIcon2{
+    /* background-color: white; */
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+.numberOfItem2{
+    display: none;
+    color: white;
+    position: absolute;
+    padding: 5px;
+    font-size: 10PX;
+    background-color: red;
+    border-radius: 505;
+    top: -12px;
+    right: -10px;
+}
+
+
+/*Slider section*/
+
+.slider{
+    /* background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"); */
+
+    
+    background: url("https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+    
+    /*if there is any overflow of items using flex for example we can hide it from the screen*/
+    overflow: hidden;    
+    height: 105vh;
+}
+
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1s ease-in-out;
+}
+
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*if you are going to use the absolute position the parents must have relative position */
+    position: relative;
+}
+
+.sliderTitle{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.sliderImg{
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.sliderImg:hover{
+    scale: 1.1;
+}
+
+.sliderBg{
+    width: 750px;
+    height: 750px;
+    /* background-color: yellow; */
+    border-radius: 50%;
+    position: absolute;
+}
+
+
+/* .sliderPrice{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    border: 1px solid grey;
+    color: white;
+    z-index: 1;
+} */
+
+.buyButton{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    border: 1px solid grey;
+    background-color: black;
+    color: white;
+    z-index: 1;
+    width: 8em;
+    height: 50px;
+    cursor: pointer;
+}
+
+.buyButton:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/*features*/
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature:hover{
+    scale: 1.1;
+}
+
+.feature:after{
+    content: "";
+    position: absolute;
+    background-color: aqua;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 1s;
+}
+
+.feature:hover:after{
+    width: 100%;
+}
+
+.featureIcon{
+    width: 50px;
+    height: 50px;
+}
+
+.featureTitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.featureDesc{
+    color: grey;    
+    width: 50%;
+    height: 100px;
+}
+
+.feature a{
+    color: #111;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+/*product section*/
+.product{
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+
+.productImg{
+    width: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.productImg:hover{
+    scale: 1.2;
+}
+
+.productDetails{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+}
+
+.productTitle{
+    font-size: 75px;
+    font-weight: 900;
+}
+
+.productDesc{
+    font-size: 24px;
+    color: gray;
+
+}
+
+.colors,.sizes{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.color{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.color:last-child{
+    background-color: #FFC47E;
+}
+
+.size{
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.addToCart{
+    float: right;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.addToCart:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/*gallery section*/
+
+.gallery{
+    display: flex;
+    padding: 50px;
+    height: 550;
+}
+
+.galleryItem{
+    flex: 1;
+    padding: 50px;
+}
+
+.galleryImg{
+    width: 100%;
+}
+
+/*new season section*/
+.newSeason{
+    display: flex;
+}
+
+.nsItem{
+    flex: 1;
+    background-color: black;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.nsImg{
+    width: 100%;
+    height: 550px;
+}
+
+.nsTitle{
+    font-size: 40px;
+}
+
+.nsButton{
+    padding: 15px;
+    color: black;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for the overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Apply the blur effect */
+    z-index: 100; /* Ensure the overlay stays behind the contact form */
+    display: none; /* Initially hidden */
+}
+
+/*contact section*/
+.contact{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    max-width: 1000px;
+    height: 570px;
+    background: rgb(225,212,187);
+    background: linear-gradient(90deg, rgba(225,212,187,1) 45%, rgba(227,227,227,1) 77%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    /*box-shadow (box-shadow generator)*/
+    -webkit-box-shadow: 14px 25px 104px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 25px 104px 11px rgba(0,0,0,0.75);
+    box-shadow: 14px 25px 104px 11px rgba(0,0,0,0.75);
+
+    z-index: 100;
+    border-radius: 10px;
+
+    transform: translate(-50%, -50%);
+}
+
+.contact.show{
+    animation: fadeIn 0.5s ease-in-out forwards;
+    /*insures that my popup is above all element*/
+    z-index: 101;
+}
+
+/* Animation for hiding the popup */
+.contact.hide {
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    }
+    to {
+    opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+        display: none;
+    }   
+}
+
+.close-contact-icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 25px;
+    right: 35px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.close-contact-icon:hover{
+    transform: scale(1.2);
+}
+
+.contact h1{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.contactTitle hr{
+    margin: 0;
+    border: 0;
+    width: 65%;
+    height: 4px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.contactInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+}
+
+.circular-img{
+    padding: 15px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.circular-img:hover{
+    background-color: #FFC47E;
+}
+
+.address-img, .phone-img{
+    width: 80px;
+    height: 80px;
+}
+
+.address-title, .phone-title{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.address-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    height: 100%;
+    margin-left: 35px;
+}
+
+.address-desc{
+    width: 80%;
+}
+
+.address-name , .phone-owner{
+    font-weight: 600;
+} 
+
+.phone-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    height: 100%;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 60%;
+    height: 100%;
+    margin-left: 80px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.message-title{
+    font-size: 35px;
+    margin-top: 0;
+}
+
+.name-input, .email-input, .message-input, .submit{
+    margin-left: 1px;
+}
+
+.name-input, .email-input{
+    width: 60%;
+    height: 35px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.message-input{
+    width: 60%;
+    height: 80px;
+    border: none;
+    outline: none;
+    padding: 15px 0 20px 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 20px;
+    margin-bottom: 35px;
+    resize: none;
+}
+
+form input:focus, textarea:focus{
+    border: 2px solid #ff994f;
+}
+
+form button{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    padding: 2px 20px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: black;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.right-arrow{
+    width: 25px;
+    height: 30px;
+}
+
+form button:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+
+
+
+
+/*footer section*/
+
+footer{
+    display: flex;
+}
+
+.footerLeft{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.fMenuTitle{
+    font-size: 16px;
+}
+
+.fMenuList{
+    padding: 0px;
+    list-style: none;
+}
+
+.fListItem{
+    margin-bottom: 10px;
+    color: grey;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.fContact{
+    cursor: pointer;
+}
+
+.fListItem:after{
+    content: "";
+    position: absolute;
+    background-color: #888585;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: 1s;
+}
+
+.fListItem:hover:after{
+    width: 100%;
+}
+
+.fListItem:hover{
+    color: #111;
+    transform: translateX(5px);
+}
+
+.footerRight{
+    flex: 1;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10%;
+}
+
+
+.fInput{
+    padding: 5px;
+}
+
+.fButton{
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+
+.fIcons{
+    display: flex;
+    flex-direction: row;
+}
+
+.fIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.copyright{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/*for responsive website we gonna use our media-query*/
+@media(max-width: 1052px){
+    .menuIcon{
+        display: flex;
+    }
+
+    .navBottom{
+        display: none;
+    }
+
+    .navItem{
+        display: none;
+    }
+
+    .sliderTitle{
+        top: 7%;
+        right: 3%;
+    }
+
+    .buyButton{
+        right: 3%;
+    }
+
+    .productImg{
+        margin-top: 100px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    nav{
+        padding: 20px;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .navBottom{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .navTop .menuItem{
+        display: none;
+    }
+
+    .menuIcon{
+        margin-right: 20px;
+    }
+    
+
+    .slider{
+        padding: 80px 0 20px;
+        clip-path: none;
+        padding-top: 100px;
+        height: auto;
+    }
+
+    .sliderImg{
+        width: 90%;
+    }
+
+    /* .sliderImg:nth-child(1){
+        width: ;
+    } */
+
+    .sliderBg{
+        width: 85%;
+        height: 85%;
+    }
+
+    .sliderTitle{
+        display: none;
+    }
+
+    .sliderPrice{
+        top: unset;
+        bottom: 10px;
+        left: 15px;
+        background-color: lightgrey;
+        font-size: 30px;
+        border-radius: 3px;
+    }
+
+    .buyButton{
+        top: 50px;
+        right: 15px;
+        font-size: 20px;
+        width: 35%;
+        height: 35px;
+    }
+
+    .features{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feature:after{
+        bottom: 25px;
+    }
+
+    .product{
+        clip-path: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productDetails{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        position: relative;
+        top: 0;
+    }
+
+    .productTitle{
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .productDesc{
+        font-size: 17px;
+        margin: 20px;
+    }
+
+    .productImg{
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    .gallery{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .galleryItem{
+        padding: 20px;
+    }
+
+    .newSeason{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nsItem:nth-child(2){
+        padding: 50px;
+    }
+
+    .nsTitle{
+        font-size: 30px;
+    }
+
+    .contact{
+        height: 80%;
+        flex-flow: row wrap;
+    }
+
+    .contact h1{
+        margin: 10px 0 0 0;
+        font-size: 30px;
+    }
+
+    .close-contact-icon{
+        width: 20px;
+        height: 20px;
+    }
+
+    
+    .contactInfo{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: self-start;
+        height: 85%;
+        margin-top: 0;
+    }
+    
+    .address-container, .phone-container{
+        margin: 10px;
+        width: 40%;
+        height: 20px;
+    }
+
+    .address-img, .phone-img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .address-title, .phone-title{
+        font-size: 15px;
+        margin: 5px 10px 0 0;
+    }
+
+
+    .address-name, .phone-owner{
+        font-size: 12px;
+    }
+
+    .address-desc{
+        width: 110%;
+        font-size: 12px;
+    }
+
+    .phone-number{
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .form-container{
+        align-self: self-end;
+        width: 100%;
+        height: 50%;
+        margin: 20px 0 0 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .message-title{
+        font-size: 23px;
+        margin-bottom: 15px;
+        font-weight: 900;
+    }
+
+    form{
+        height: 100%;
+        /* margin-left: 10px; */
+        align-items: center;
+    }
+
+    .name-input, .email-input{
+        width: 80%;
+        height: 30px;
+    }
+
+    .message-input{
+        width: 80%;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerLeft{
+        padding: 20px;
+        width: 80%;
+    }
+
+    .footerRight{
+        margin: 0;
+        padding: 50px 0;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(240, 240, 240);
+    }
+    
+
+}
+

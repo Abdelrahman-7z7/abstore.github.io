@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/x-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABStore</title>
+    <link rel="stylesheet" href="./cart.css">
+    <!--google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!--Nav bar section-->
+
+    
+        
+    <nav id="nav">
+        <div class="navTop">
+            <!--logo / search bar / some text-->
+            <div class="navTitle">
+                <a href="./index.html">
+                    <img src="./img/logo-no-background2.png" alt="" width="180px" height="auto">
+                </a>
+            </div>
+
+            <!-- <div class="navItem">
+
+                <div class="search">
+                    <input type="text" placeholder="search..." class="searchInput">
+                    <img src="./img/search.png" alt="" class="searchIcon" height="20" width="20">
+
+                </div>
+
+            </div> -->
+
+            <div class="navItem">
+                <span class="limitedOffer">Limited offer!</span>
+            </div>
+
+        </div>
+
+    </nav>
+    
+
+
+    <h1 class="headingTitle">Shopping Cart</h1>
+
+    <!--shipping cart section-->
+
+    <div class="shippingCart">
+        
+        <div class="shippingSlider">
+
+            <!-- <div class="shippedItem">
+
+                <img src="./img/air.png" alt="" class="itemImg">
+
+                <div class="itemDesc">
+                    <span class="itemTitle">AirForce</span>
+                    <span class="itemDetails">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam earum corporis, labore </span>
+                    <span class="sellerName">sold by <b>.Sneakers</b></span>
+                    <span class="warranty"><b>30 days warranty</b></span>
+                    <button class="removeBtn">
+                        <img src="./img/delete.png" alt="" class="delete">
+                        remove
+                    </button>
+                </div>
+
+            </div> -->
+
+            <!--empty cart-->
+            <div class="emptyCart">
+                <img src="./img/emptyCart.png" alt="" class="ecImg">
+                <h1 class="ecTitle">
+                    Your shipping cart looks empty
+                </h1>
+                <p class="ecDetail">Keep shopping to find you clothes</p>
+            </div>
+            
+
+        </div>
+
+        <a href="./index.html">
+            <button class="continueShoBtn">Continue Shopping</button>
+        </a>
+        
+        <div class="itemPriceFixed">
+            <div class="itemPrice">
+
+                <span class="pTitle">Order Summary</span>
+
+                <div class="pSubtotal">
+                    <span class="psTitle">Subtotal (0 item)</span>
+                    <span class="psPrice">USD 0.00</span>
+                </div>
+    
+                <div class="pShipping">
+                    <span>Shipping Details</span>
+                    <span>Free</span>
+                </div>
+    
+                <hr>
+    
+                <div class="totalPrice">
+                    <span><b>Total</b> (inclusive of VAT)</span>
+                    <span class="tpNumber">USD 0.00</span>
+                </div>
+    
+                <button class="checkoutBtn">Check out</button>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <!--Payment section-->
+    <div class="payment">
+        <h1 class="payTitle">Personal Information</h1>
+        <label for="">Name and Surname</label>
+        <input type="text" class="payInput" placeholder="John Doe">
+
+        <label for="">Phone Number</label>
+        <input type="text" class="payInput" placeholder="+90 547 4568 123">
+
+        <label for="">Name and Surname</label>
+        <input type="text" class="payInput" placeholder="Istanbul sk 14253">
+
+        <h1 class="payTitle">Card Information</h1>
+
+        <div class="cardIcons">
+            <img src="./img/visa.png" width="40" class="cardIcon">
+            <img src="./img/master.png" alt="" width="40" class="cardIcon">
+        </div>
+
+        <input type="text" class="payInput sm" placeholder="Card Number">
+
+        <div class="cardInfo">
+            <input type="text" placeholder="mm" class="payInput sm">
+            <input type="text" placeholder="yyyy" class="payInput sm">
+            <input type="text" placeholder="cvv" class="payInput sm">
+        </div>
+
+        <button class="payButton">Checkout!</button>
+
+        <span class="close">X</span>
+    </div>
+
+    <!--overlay for bluring-->
+    <div class="overlay"></div>
+
+    <!--contact section-->
+
+    <div class="contact">
+        <h1 class="contactTitle">
+            Get In Touch
+            <hr>
+        </h1>
+        
+        <img src="./img/cross.png" alt="" class="close-contact-icon" width="30px" height="30px">
+        <div class="contactInfo">
+
+            <div class="address-container">
+                <div class="circular-img">
+                    <a href="https://maps.app.goo.gl/EGUYaZYQtVSUBRXz5" target="_blank">
+                        <img src="./img/location.png" alt="" class="address-img">
+                    </a>
+                </div>
+                <h4 class="address-title">Address</h4>
+                <p class="address-name">Istanbul Nisantasi University</p>
+                <span class="address-desc">Maslak Mahallesi, Taşyoncası Sokak, No: 1V ve No:1Y Bina Kodu: 34481742, 34398 Sarıyer/İstanbul</span>
+            </div>
+
+            <div class="phone-container">
+                <div class="circular-img">
+                    <img src="./img/phone-call.png" alt="" class="phone-img">
+                </div>
+                <h4 class="phone-title">Phone</h4>
+                <p class="phone-owner">International office</p>
+                <span class="phone-number"><b>+90</b> 543 147 7711</span>
+            </div>
+
+            <div class="form-container">
+                <h2 class="message-title">Message Us</h2>
+
+                <form class="message-container" action="https://api.web3forms.com/submit" method="POST">
+                    
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+                    <input type="hidden" name="access_key" value="4ae56386-2a3a-45ed-a008-5d5923cdc46a">
+    
+                    <input type="text" name="name" class="name-input" placeholder="Your Name" required>
+    
+                    <input type="email" name="email" class="email-input" placeholder="youremail@gmail.com" required>
+    
+                    <textarea name="message" class="message-input" placeholder="Your Message" required></textarea>
+    
+                    <button class="submit">
+                        submit
+                        <img src="./img/right-arrow.png" alt="" class="right-arrow">
+                    </button>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+    
+
+    <!--footer section-->
+
+    <footer>
+        
+        <div class="footerLeft">
+
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About US</h1>
+                <ul class="fMenuList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem fContact">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Affiliates</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fMenuList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fMenuList">
+                    <li class="fListItem">Air Force</li>
+                    <li class="fListItem">Air Jordan</li>
+                    <li class="fListItem">Blazer</li>
+                    <li class="fListItem">Crater</li>
+                    <li class="fListItem">Hippie</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footerRight">
+
+                <div class="footerRightMenu">
+                    <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                    <div class="fMail">
+                        <input type="text" placeholder="your@email.com" class="fInput">
+                        <button class="fButton">Join!</button>
+                    </div>
+                </div> 
+
+                <div class="footerRightMenu">
+                    <h1 class="fMenuTitle">Follow Us</h1>
+                    <div class="fIcons">
+                        <a href="https://twitter.com/abdulrahman_z7z" target="_blank">
+                            <img src="./img/twitter.png" alt="" class="fIcon">
+                        </a>
+                        
+
+                        <a href="https://www.instagram.com/abdelrahman_7z?igsh=Nnd4OW9pc2VxbGEy&utm_source=qr" target="_blank">
+                            <img src="./img/instagram.png" alt="" class="fIcon">
+                        </a>
+                        
+                        <a href="whatsapp://send?phone=+905436978152" target="_blank">
+                            <img src="./img/whatsapp.png" alt="" class="fIcon">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footerRightMenu">
+                    <span class="copyright">@Elorabi. All rights reserved. 2024.</span>
+                </div>
+        </div>
+    </footer>
+
+    <script src="./script2.js"></script>
+</body>
+</html>

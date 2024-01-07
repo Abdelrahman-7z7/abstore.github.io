@@ -1,0 +1,940 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+body.blur{
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+.headingTitle{
+    margin-left:50px;
+    margin-top: 40px;
+    text-shadow: 3px 5px 2px rgb(233, 232, 232);
+}
+
+nav{
+    background-color: #111;
+    color: white;
+    padding: 20px 50px;    
+}
+
+.navTitle{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*navTop styling items*/
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color: grey;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.searchInput{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    
+}
+
+.searchInput::placeholder{
+    color: lightgrey;
+}
+
+.limitedOffer{
+    font-size: 25px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+}
+
+
+/*shipping cart*/
+
+.shippingCart{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin-bottom: 120px;
+    position: relative;
+    margin-left: 50px;
+}
+
+
+.shippingSlider{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    width: 60%;
+    position: relative;
+}
+
+.shippedItem{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 10%;
+    height: 30vh;
+    width: 80%;
+    position: relative;
+    margin-bottom: 20px;
+    transition: all 1s ease-in-out;
+}
+
+
+.itemImg{
+    padding-left: 20px;
+    width: 15rem;
+    height: 15rem;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.itemImg:hover{
+    scale: 1.2;
+}
+
+.itemDesc{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    padding: 10px;
+    margin-left: 40px;
+    position: relative;
+    top: 0;
+}
+
+.itemTitle{
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.itemDetails{
+    color: gray;
+    padding-bottom: 20px;
+}
+
+.sellerName{
+    padding-bottom: 5px;
+}
+
+.warranty{
+    padding-bottom: 20px;
+}
+
+.removeBtn{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    outline: none;
+    border: none;
+    background-color: white;
+    color: gray;
+    transition: all 0.3s ease-in-out;
+}
+
+.removeBtn:hover{
+    color: #111;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.removeBtn img{
+    width: 15px;
+    height: 15px;
+}
+
+/*shipping cart continue button*/
+.continueShoBtn{
+    position: absolute;
+    bottom: -10px;
+    left: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: green;
+    border: 2px solid green;
+    transition: all 0.3s ease-in-out;
+}
+
+.continueShoBtn:hover{
+    background-color: white;
+    color: green;
+    cursor: pointer;
+}
+
+/*in case if the cart is empty*/
+
+.emptyCart{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ecTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+
+/*item's price section*/
+.itemPriceFixed{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;    
+}
+
+.itemPrice{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 55vh;
+    height: 25vh;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+}
+
+
+.pTitle{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    color: rgb(66, 66, 66);
+}
+
+.pSubtotal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10px;
+    color: rgb(99, 98, 98);
+}
+
+.pShipping{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10px;
+    color: rgb(99, 98, 98);
+}
+
+hr{ 
+    color: black;
+}
+
+.totalPrice{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    color: rgb(99, 98, 98);
+}
+
+.totalPrice b{
+    color: black;
+    letter-spacing: 1px;
+}
+
+.tpNumber{
+    color: black;
+    font-weight: 600;
+}
+
+.checkoutBtn{
+    color: white;
+    background-color: green;
+    border: 2px solid green;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.checkoutBtn:hover{
+    background-color: white;
+    color: green;
+}
+
+
+
+
+/*payment section*/
+.payment{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: fixed;
+
+    /*to center the div*/
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+    z-index: 101;
+
+    padding: 10px 50px;
+
+    display: none;
+    flex-direction: column;
+
+    /*box-shadow (box-shadow generator)*/
+    -webkit-box-shadow: 11px 10px 36px 3px rgba(0,0,0,0.48);
+    -moz-box-shadow: 11px 10px 36px 3px rgba(0,0,0,0.48);
+    box-shadow: 11px 10px 36px 3px rgba(0,0,0,0.48);
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+.payTitle{
+    font-size: 20px;
+    color: lightgrey;
+}
+
+label{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.payInput{
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.payInput::placeholder{
+    color: rgb(163, 163, 163);
+}
+
+.cardIcons{
+    display: flex;
+}
+
+.cardIcon{
+    margin-right: 10px;
+}
+
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sm{
+    width: 30%;
+    margin-right: 20px;
+}
+
+.payButton{
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    bottom: -40px;
+    left: 0;
+    /*box-shadow (box-shadow generator)*/
+    -webkit-box-shadow: 11px 40px 36px -5px rgba(0,0,0,0.48);
+    -moz-box-shadow: 11px 40px 36px -5px rgba(0,0,0,0.48);
+    box-shadow: 11px 40px 36px -5px rgba(0,0,0,0.48);
+    background-color: #369e62;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* .payButton:hover{
+    
+} */
+
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    color: gray;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.close:hover{
+    scale: 1.2;
+}
+
+
+.payButton:hover{
+    background-color: rgb(0, 104, 0);
+    font-size: 15px;
+}
+
+/* Style for the overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Apply the blur effect */
+    z-index: 100; /* Ensure the overlay stays behind the contact form */
+    display: none; /* Initially hidden */
+}
+
+
+/*contact section*/
+.contact{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    max-width: 1000px;
+    height: 570px;
+    background: rgb(225,212,187);
+    background: linear-gradient(90deg, rgba(225,212,187,1) 45%, rgba(227,227,227,1) 77%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    /*box-shadow (box-shadow generator)*/
+    -webkit-box-shadow: 14px 25px 104px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 25px 104px 11px rgba(0,0,0,0.75);
+    box-shadow: 14px 25px 104px 11px rgba(0,0,0,0.75);
+
+    z-index: 100;
+    border-radius: 10px;
+
+    transform: translate(-50%, -50%);
+}
+
+.contact.show{
+    animation: fadeIn 0.5s ease-in-out forwards;
+    /*insures that my popup is above all element*/
+    z-index: 100;
+}
+
+/* Animation for hiding the popup */
+.contact.hide {
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    }
+    to {
+    opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+        display: none;
+    }   
+}
+
+.close-contact-icon{
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.close-contact-icon:hover{
+    transform: scale(1.2);
+}
+
+.contact h1{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.contactTitle hr{
+    margin: 0;
+    border: 0;
+    width: 65%;
+    height: 4px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.contactInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+}
+
+.circular-img{
+    padding: 15px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.circular-img:hover{
+    background-color: #FFC47E;
+}
+
+.address-img, .phone-img{
+    width: 80px;
+    height: 80px;
+}
+
+.address-title, .phone-title{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.address-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    height: 100%;
+    margin-left: 35px;
+}
+
+.address-desc{
+    width: 80%;
+}
+
+.address-name , .phone-owner{
+    font-weight: 600;
+} 
+
+.phone-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    height: 100%;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 60%;
+    height: 100%;
+    margin-left: 80px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.message-title{
+    font-size: 35px;
+    margin-top: 0;
+}
+
+.name-input, .email-input, .message-input, .submit{
+    margin-left: 1px;
+}
+
+.name-input, .email-input{
+    width: 60%;
+    height: 35px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.message-input{
+    width: 60%;
+    height: 80px;
+    border: none;
+    outline: none;
+    padding: 15px 0 20px 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 20px;
+    margin-bottom: 35px;
+    resize: none;
+}
+
+form input:focus, textarea:focus{
+    border: 2px solid #ff994f;
+}
+
+form button{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    padding: 2px 20px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: black;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+
+.right-arrow{
+    width: 25px;
+    height: 30px;
+}
+
+form button:hover{
+    background: rgb(120,120,120);
+background: linear-gradient(90deg, rgba(120,120,120,1) 11%, rgba(0,0,0,1) 53%);
+}
+
+
+/*footer section*/
+
+footer{
+    display: flex;
+    background-color: white;
+    
+}
+
+.footerLeft{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.fMenuTitle{
+    font-size: 16px;
+}
+
+.fMenuList{
+    padding: 0px;
+    list-style: none;
+}
+
+.fListItem{
+    margin-bottom: 10px;
+    color: grey;
+    transition: transform 0.3s ease;
+}
+
+.fContact{
+    cursor: pointer;
+}
+
+.fListItem:after{
+    content: "";
+    position: absolute;
+    background-color: #888585;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+.fListItem:hover:after{
+    width: 100%;
+}
+
+.fListItem:hover{
+    color: #111;
+    transform: translateX(5px);
+}
+
+.footerRight{
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10%;
+}
+
+
+.fInput{
+    padding: 5px;
+}
+
+.fButton{
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+
+.fIcons{
+    display: flex;
+    flex-direction: row;
+}
+
+.fIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.copyright{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+@media(max-width: 1340px){
+    .shippedItem{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .itemDesc{
+        width: 100%;
+        margin: 0;
+    }
+
+    .itemTitle{
+        font-size: 40px;
+    }
+
+    .itemImg{
+        width: 60%;
+        height: 60%;
+        padding-left: 0 ;
+    }
+    
+}
+
+@media(max-width: 840px){
+
+
+    .shippingCart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+
+    .continueShoBtn{
+        bottom: 20px;
+        left: 20px;
+    }
+    .itemPriceFixed{
+        width: 90%;
+        order: -1;
+        margin-bottom: 25px;
+    }
+
+    .itemPrice{
+        width: 90%;
+        height: 35vh;
+    }
+
+    .limitedOffer{
+        display: none;
+    }
+
+    .shippingSlider{
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .shippedItem{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .removeBtn{
+        bottom: 10px;
+        right: 20px;
+    }
+
+    .payment{
+        width: 70%;
+    }
+
+    .contact{
+        height: 80%;
+        flex-flow: row wrap;
+    }
+
+    .contact h1{
+        margin: 10px 0 0 0;
+        font-size: 30px;
+    }
+
+    .close-contact-icon{
+        width: 20px;
+        height: 20px;
+    }
+
+    
+    .contactInfo{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: self-start;
+        height: 85%;
+        margin-top: 0;
+    }
+    
+    .address-container, .phone-container{
+        margin: 10px;
+        width: 40%;
+        height: 20px;
+    }
+
+    .address-img, .phone-img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .address-title, .phone-title{
+        font-size: 15px;
+        margin: 5px 10px 0 0;
+    }
+
+
+    .address-name, .phone-owner{
+        font-size: 12px;
+    }
+
+    .address-desc{
+        width: 110%;
+        font-size: 12px;
+    }
+
+    .phone-number{
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .form-container{
+        align-self: self-end;
+        width: 100%;
+        height: 50%;
+        margin: 20px 0 0 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .message-title{
+        font-size: 23px;
+        margin-bottom: 15px;
+        font-weight: 900;
+    }
+
+    form{
+        height: 100%;
+        /* margin-left: 10px; */
+        align-items: center;
+    }
+
+    .name-input, .email-input{
+        width: 80%;
+        height: 30px;
+    }
+
+    .message-input{
+        width: 80%;
+    }
+
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerLeft{
+        padding: 20px;
+        width: 80%;
+    }
+
+    .footerRight{
+        margin: 0;
+        padding: 50px 0;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(240, 240, 240);
+    }
+    
+}
+
+
+
