@@ -926,7 +926,7 @@ footer{
     .slider{
         padding: 80px 0 0 0;
         clip-path: none;
-        padding-top: 100px;
+        padding-top: 50px;
     }
 
     .sliderItem{
@@ -935,8 +935,6 @@ footer{
         align-items: center;
         justify-content: center;
     }
-
-    
 
     .sliderTitle{
         display: none;
@@ -951,8 +949,8 @@ footer{
 
     .img-container img{
         width: 100%;
-        height: fit-content;
-        padding: 0;
+        /* height: fit-content; */
+        padding: 50px;
     }
 
 
@@ -967,7 +965,7 @@ footer{
     .buyButton{
         position: absolute;
         font-size: 16px;
-        top: 50px;
+        top: 80px;
         right: 5%;
         width: 30%;
         height: 33px;
@@ -977,7 +975,7 @@ footer{
         width: %;
     } */
 
-    .sliderItem:nth-child(3) .img-container{
+    /* .sliderItem:nth-child(3) .img-container{
         width: 100%;
         height: 70%;
     }
@@ -985,7 +983,7 @@ footer{
     .sliderItem:nth-child(4) .img-container{
         height: 90%;
         padding-top: 20px;
-    }
+    } */
 
     /*features*/
 
