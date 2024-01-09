@@ -403,6 +403,8 @@ ul .menuitemLi{
 
 /*product section*/
 .product{
+    display: flex;
+    align-items: center;
     height: 100vh;
     background-color: whitesmoke;
     position: relative;
@@ -410,6 +412,8 @@ ul .menuitemLi{
 }
 
 .productImg{
+    margin-bottom: auto;
+    height: 100%;
     width: 50%;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
@@ -926,7 +930,7 @@ footer{
     .slider{
         padding: 80px 0 0 0;
         clip-path: none;
-        padding-top: 50px;
+        /* padding-top: 50px; */
     }
 
     .sliderItem{
@@ -942,15 +946,15 @@ footer{
 
     .img-container{
         width: 100%;
-        padding-top: 5px;
+        /* padding-top: 5px; */
         justify-content: center;
-        height: 50vh;
+        height: 55vh;
     }
 
     .img-container img{
         width: 100%;
         /* height: fit-content; */
-        padding: 100px;
+        padding: 50px;
     }
 
 
@@ -965,25 +969,22 @@ footer{
     .buyButton{
         position: absolute;
         font-size: 16px;
-        top: 80px;
+        top: 50px;
         right: 5%;
         width: 30%;
         height: 33px;
     }
 
-    /* .sliderItem:nth-child(1) .img-container{
-        width: %;
-    } */
-
-    /* .sliderItem:nth-child(3) .img-container{
-        width: 100%;
-        height: 70%;
-    }
-
+    .sliderItem:nth-child(3) .img-container img{
+        width: 90%;
+        height: fit-content;
+    } 
+    /*
     .sliderItem:nth-child(4) .img-container{
         height: 90%;
         padding-top: 20px;
     } */
+
 
     /*features*/
 
