@@ -1027,6 +1027,7 @@ footer{
 
     .productImg{
         margin-top: 20px;
+        margin-bottom: 0;
         height: auto;
         width: 80%;
     }
