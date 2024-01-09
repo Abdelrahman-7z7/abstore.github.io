@@ -216,12 +216,11 @@ nav{
 .itemPrice{
     background-color: white;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
     width: 55vh;
-    height: 25vh;
+    height: fit-content;
     border-radius: 10px;
     position: sticky;
     top: 0;
@@ -774,7 +773,14 @@ footer{
 
 @media(max-width: 840px){
 
+    nav{
+        padding: 20px 20px;
+    }
 
+    .navTitle img{
+        width: 150px;
+        height: auto;
+    }
     .shippingCart{
         display: flex;
         flex-direction: column;
@@ -829,8 +835,10 @@ footer{
         width: 70%;
     }
 
+    
     .contact{
-        height: 80%;
+        height: 90%;
+        width: 95%;
         flex-flow: row wrap;
     }
 
@@ -849,24 +857,29 @@ footer{
         display: flex;
         flex-flow: row wrap;
         align-items: self-start;
-        height: 85%;
+        justify-content: space-evenly;
+        height: 88%;
         margin-top: 0;
     }
     
     .address-container, .phone-container{
-        margin: 10px;
+        margin: 5px;
         width: 40%;
         height: 20px;
+        align-items: center;
+        margin-top: 10%;
+        margin-bottom: 5%;
     }
 
+
     .address-img, .phone-img{
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
     }
 
     .address-title, .phone-title{
         font-size: 15px;
-        margin: 5px 10px 0 0;
+        margin-top: 5px;
     }
 
 
@@ -875,8 +888,8 @@ footer{
     }
 
     .address-desc{
-        width: 110%;
-        font-size: 12px;
+        width: 100%;
+        font-size: 10px;
     }
 
     .phone-number{
@@ -894,7 +907,7 @@ footer{
     }
 
     .message-title{
-        font-size: 23px;
+        font-size: 20px;
         margin-bottom: 15px;
         font-weight: 900;
     }
@@ -908,11 +921,14 @@ footer{
     .name-input, .email-input{
         width: 80%;
         height: 30px;
+        margin-bottom: 10px;
     }
 
     .message-input{
         width: 80%;
+        margin-bottom: 10px;
     }
+
 
 
     footer{

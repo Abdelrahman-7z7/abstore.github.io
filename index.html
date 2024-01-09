@@ -46,7 +46,10 @@
             </div>
 
             <div class="navItem">
-                <span class="limitedOffer">Limited offer!</span>
+                <span class="limitedOffer">
+                    Limited offer!
+                    <hr>
+                </span>
                 <a href="./cart.html" class="cartIconStyle">
                     <img src="./img/shopping-cart.png" alt="" class="cartIcon">
                     <span class="numberOfItem">0</span>
@@ -72,7 +75,9 @@
             </li>
 
             <li>
-                <span class="limitedOffer">Limited offer!</span>
+                <span class="limitedOffer" style="border-bottom: 2px solid green;">
+                    Limited offer!
+                </span>
             </li>
             <li class="menuItem">
                 SWEATER
@@ -99,51 +104,92 @@
         <div class="sliderWrapper">
 
             <div class="sliderItem">
-                <img src="./img/sweater.png" alt="" class="sliderImg" >
-                <div class="sliderBg"></div>
-                <h1 class="sliderTitle">SWEATER<br>NEW <br>SEASON</h1>
-                <!-- <h2 class="sliderPrice">$119</h2> -->
-                <a href="#product">
+                <div class="img-container">
+                    <img src="./img/sweater.png" alt="" class="sliderImg">
+                </div>
+                <div class="text-container">
+                    <h1 class="sliderTitle">SWEATER<br>NEW <br>SEASON</h1>
+                    <!-- <h2 class="sliderPrice">$119</h2> -->
+                    <a href="#product">
+                        <button class="buyButton">BUY NOW!</button>
+                    </a>
+                </div>
+
+                <!--button for phone-size -->
+                <a href="#product" class="phone-button">
                     <button class="buyButton">BUY NOW!</button>
                 </a>
+
             </div>
 
             <div class="sliderItem">
-                <img src="./img/backpack.png" alt="" class="sliderImg" width="900px">
-                <div class="sliderBg"></div>
-                <h1 class="sliderTitle">BACKPACK <br>NEW <br>SEASON</h1>
-                <!-- <h2 class="sliderPrice">$149</h2> -->
-                <a href="#product">
+                <div class="img-container">
+                    <img src="./img/backpack.png" alt="" class="sliderImg">
+                </div>
+                <div class="text-container">
+
+                    <h1 class="sliderTitle">BACKPACK <br>NEW <br>SEASON</h1>
+                    <!-- <h2 class="sliderPrice">$149</h2> -->
+                    <a href="#product">
+                        <button class="buyButton">BUY NOW!</button>
+                    </a>            
+                </div>
+
+                <!--button for phone-size -->
+                <a href="#product" class="phone-button">
                     <button class="buyButton">BUY NOW!</button>
-                </a>            
+                </a>
             </div>
             
             <div class="sliderItem">
-                <img src="./img/blazer.png" alt="" class="sliderImg">
-                <div class="sliderBg"></div>
-                <h1 class="sliderTitle">BLAZER <br>NEW <br>SEASON</h1>
-                <!-- <h2 class="sliderPrice">$109</h2> -->
-                <a href="#product">
+                <div class="img-container">
+                    <img src="./img/blazer.png" alt="" class="sliderImg">
+                </div>
+                <div class="text-container">
+                    <h1 class="sliderTitle">BLAZER <br>NEW <br>SEASON</h1>
+                    <!-- <h2 class="sliderPrice">$109</h2> -->
+                    <a href="#product">
+                        <button class="buyButton">BUY NOW!</button>
+                    </a>            
+                </div>
+
+                <!--button for phone-size -->
+                <a href="#product" class="phone-button">
                     <button class="buyButton">BUY NOW!</button>
-                </a>            
+                </a>
             </div>
             
             <div class="sliderItem">
-                <img src="./img/jacket.png" alt="" class="sliderImg" width="800px">
-                <div class="sliderBg"></div>
-                <h1 class="sliderTitle">JACKET <br>NEW <br>SEASON</h1>
-                <!-- <h2 class="sliderPrice">$129</h2> -->
-                <a href="#product">
+                <div class="img-container">
+                    <img src="./img/jacket.png" alt="" class="sliderImg">
+                </div>
+                <div class="text-container">
+                    <h1 class="sliderTitle">JACKET <br>NEW <br>SEASON</h1>
+                    <!-- <h2 class="sliderPrice">$129</h2> -->
+                    <a href="#product">
+                        <button class="buyButton">BUY NOW!</button>
+                    </a>          
+                </div>
+
+                <!--button for phone-size -->
+                <a href="#product" class="phone-button">
                     <button class="buyButton">BUY NOW!</button>
-                </a>          
+                </a>
             </div>
             
             <div class="sliderItem">
-                <img src="./img/t-shirt2.png" alt="" class="sliderImg" width="900px">
-                <div class="sliderBg"></div>
-                <h1 class="sliderTitle">T-shirt <br>NEW <br>SEASON</h1>
-                <!-- <h2 class="sliderPrice">$99</h2> -->
-                <a href="#product">
+                <div class="img-container">
+                    <img src="./img/t-shirt2.png" alt="" class="sliderImg">
+                </div>
+                <div class="text-container">
+                    <h1 class="sliderTitle">T-shirt <br>NEW <br>SEASON</h1>
+                    <!-- <h2 class="sliderPrice">$99</h2> -->
+                    <a href="#product">
+                        <button class="buyButton">BUY NOW!</button>
+                    </a>
+                </div>
+                <!--button for phone-size -->
+                <a href="#product" class="phone-button">
                     <button class="buyButton">BUY NOW!</button>
                 </a>
             </div>
@@ -243,7 +289,7 @@
             <h1 class="nsTitle">NEW SEASON</h1>
             <h1 class="nsTitle">NEW COLLECTION</h1>
 
-            <a href="#nav">
+            <a href="#slider">
                 <button class="nsButton">CHOOSE YOUR STYLE!</button>
             </a>
         </div>
@@ -282,11 +328,13 @@
 
             <div class="phone-container">
                 <div class="circular-img">
-                    <img src="./img/phone-call.png" alt="" class="phone-img">
+                    <a href="whatsapp://send?phone=+905436978152" target="_blank">
+                        <img src="./img/phone-call.png" alt="" class="phone-img">
+                    </a>
                 </div>
                 <h4 class="phone-title">Phone</h4>
                 <p class="phone-owner">International office</p>
-                <span class="phone-number"><b>+90</b> 543 147 7711</span>
+                <span class="phone-number"><b>+90</b> 543 6978152</span>
             </div>
 
             <div class="form-container">
