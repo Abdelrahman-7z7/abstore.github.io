@@ -969,10 +969,10 @@ footer{
     .buyButton{
         position: absolute;
         font-size: 16px;
-        top: 50px;
-        right: 5%;
-        width: 30%;
-        height: 33px;
+        top: 10%;
+        right: 2%;
+        width: 35%;
+        height: 35px;
     }
 
     .sliderItem:nth-child(3) .img-container img{
@@ -1027,6 +1027,7 @@ footer{
 
     .productImg{
         margin-top: 20px;
+        height: auto;
         width: 80%;
     }
 
